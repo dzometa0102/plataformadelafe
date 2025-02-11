@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <title> "La Plataforma de la Fe"   </title>
+    <script>
+        function compartirFrase(frase) {
+            if (navigator.share) {
+                navigator.share({
+                    text: frase
+                }).then(() => console.log("Compartido con éxito"))
+                  .catch((error) => console.log("Error al compartir:", error));
+            } else {
+                alert("Tu navegador no soporta la función de compartir.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>"¡Hola!, bienvenido/a a la estación llamada: "La plataforma de la Fe". "</h1>
+    <p> "Elige una de las frases a continuación, pulsa sobre la que más te guste y deberás compartirla a 3 personas mediante la aplicación de mensaje que tu quieras." </p>
+   
+    <button onclick="compartirFrase('La Eucaristía es mi autopista al cielo. - Carlo Acutis')">
+        "La Eucaristía es mi autopista al cielo."
+    </button>
+    
+    <button onclick="compartirFrase('Todos nacen como originales, pero muchos mueren como fotocopias. - Carlo Acutis')">
+        "Todos nacen como originales, pero muchos mueren como fotocopias."
+    </button>
+    
+    <button onclick="compartirFrase('La felicidad es mirar a Dios. - Carlo Acutis')">
+        "La felicidad es mirar a Dios, la tristeza es mirar a uno mismo."
+    </button>
+
+    <button onclick="compartirFrase('Dale más importancia a la belleza de tu alma que a tu belleza corporal. - Carlo Acutis')">
+        "Dale más importancia a la belleza de tu alma que a tu belleza corporal."
+    </button>
+
+    <button onclick="compartirFrase('Si te propones a hacer algo, hazlo perfecto. Si es para Dios, hazlo aún mejor. - Pbro. Rómulo Gallegos')">
+        "Si te propones a hacer algo, hazlo perfecto. Si es para Dios, hazlo aún mejor."
+    </button>
+
+    <button onclick="compartirFrase('Alégrate: La santidad consiste en estar siempre alegres. - San Juan Bosco')">
+        "Alégrate. La santidad consiste en estar siempre alegres."
+    </button>
+
+    <button onclick="compartirFrase('Todo a Jesús por María. - San Marcelino Champagnat.')">
+        "Todo a Jesús por María."
+    </button>
+
+    <button onclick="compartirFrase('¿De que sirve ganar mil batallas si no puedes contra tus pasiones?. - Carlo Acutis')">
+        "¿De que sirve ganar mil batallas si no puedes contra tus pasiones?"
+    </button>
+</body>
+</html>
