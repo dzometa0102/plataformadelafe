@@ -1,8 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f8f9fa;
-    padding: 20px;
+    background: linear-gradient(135deg, #da5d22, #ce0a55);
+    color: white; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
